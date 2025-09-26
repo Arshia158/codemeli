@@ -1,0 +1,115 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ساخت کد ملی</title>
+    <meta name="description" content="ساخت و ایجاد یک کد ملی به سادگی انجام میشود و برای صحت و بررسی و تست کد ملی این پیج ساخته شده است. تولید کد ملی رند و شماره ملی ایران و ایرانی رندم است">
+    <meta name="keywords" content="کد ملی صحیح , کد ملی ایران , کدملی , کد ملی رندم , کد ملی شانسی , کد ملی تستی , تست کد ملی , اعتبار سنجی کد ملی , اعتبارسنجی کد ملی , صحت کد ملی ایران , تولید کد ملی معتبر, ایجاد کد ملی درست ,  ساخت کد ملی رند">
+    <meta name="robots" content="index,follow,archive">
+    <meta name="author" content="مجید هوشیار - MAjidH1">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/gh/majidh1/iranianNationalCode@main/src/iranianNationalCodeGenerator.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/majidh1/iranianNationalCode@main/src/iranianNationalCodeRoundGenerator.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/majidh1/iranianNationalCode@main/src/iranianNationalCodeValidator.js"></script>
+
+    <style>
+        :root { --md-sys-color-primary: #89b4fa; --md-sys-color-on-primary: #003062; --md-sys-color-primary-container: #00468a; --md-sys-color-on-primary-container: #d6e3ff; --md-sys-color-background: #1a1c1e; --md-sys-color-on-background: #e3e2e6; --md-sys-color-surface: #1a1c1e; --md-sys-color-on-surface: #e3e2e6; --md-sys-color-surface-variant: #44474f; --md-sys-color-on-surface-variant: #c4c6d0; --md-sys-color-outline: #5a5d64; --md-sys-color-surface-container: #202225; --md-sys-color-surface-container-high: #292a2d; --md-sys-color-surface-container-higher: #333538; --md-sys-color-error: #ffb4ab; --md-sys-color-error-container: #93000a; --md-sys-color-on-error-container: #ffdad6; --md-sys-color-success: #81d89a; --md-sys-color-success-container: #005327; --md-sys-color-on-success-container: #9cf5b4; --font-family: 'Vazirmatn', sans-serif; --border-radius-xl: 28px; --border-radius-large: 16px; --border-radius-medium: 12px; --border-radius-small: 8px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-tap-highlight-color: transparent; font-size: 15px; }
+        body { font-family: var(--font-family); background-color: var(--md-sys-color-background); color: var(--md-sys-color-on-background); line-height: 1.7; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+        .container { width: 100%; max-width: 600px; background-color: var(--md-sys-color-surface-container); border: 1px solid var(--md-sys-color-outline); border-radius: var(--border-radius-large); padding: 2rem; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); }
+        h1 { text-align: center; margin-bottom: 2rem; font-size: 2.5rem; color: var(--md-sys-color-primary); }
+        .button-group { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .btn { font-family: inherit; font-size: 1rem; padding: 0.8rem 1.5rem; background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); border-radius: var(--border-radius-xl); border: none; cursor: pointer; font-weight: 700; transition: all 0.2s ease; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+        .btn:hover { background-color: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); transform: translateY(-3px); }
+        .result-box { background-color: var(--md-sys-color-surface-container-high); border: 1px solid var(--md-sys-color-outline); border-radius: var(--border-radius-medium); padding: 1.5rem; margin: 1.5rem 0; text-align: center; min-height: 70px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 500; position: relative; color: var(--md-sys-color-on-surface); }
+        .copy-btn { position: absolute; left: 15px; background-color: var(--md-sys-color-surface-container-higher); border: 1px solid var(--md-sys-color-outline); border-radius: var(--border-radius-small); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--md-sys-color-on-surface-variant); transition: all 0.3s ease; }
+        .copy-btn:hover { background-color: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); transform: scale(1.1); }
+        .input-group { display: flex; flex-direction: column; align-items: center; margin: 2rem 0; }
+        input { width: 100%; max-width: 300px; padding: 1rem; text-align: center; background-color: var(--md-sys-color-surface-container-higher); color: var(--md-sys-color-on-surface); font-size: 1.2rem; border: 1px solid var(--md-sys-color-outline); border-radius: var(--border-radius-medium); margin-bottom: 1.5rem; transition: border-color 0.3s ease; }
+        input:focus { outline: none; border-color: var(--md-sys-color-primary); }
+        .divider { height: 1px; background: linear-gradient(to right, rgba(255,255,255,0), var(--md-sys-color-outline), rgba(255,255,255,0)); margin: 2rem 0; border-radius: 2px; }
+        .valid { color: var(--md-sys-color-success); font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .invalid { color: var(--md-sys-color-error); font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .footer { margin-top: 2rem; text-align: center; font-size: 0.9rem; opacity: 0.8; color: var(--md-sys-color-on-surface-variant); }
+        .notification { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: var(--md-sys-color-success-container); color: var(--md-sys-color-on-success-container); padding: 1rem 1.5rem; border-radius: var(--border-radius-xl); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); opacity: 0; transition: opacity 0.3s ease; z-index: 1000; }
+        .notification.show { opacity: 1; }
+        .for-seo { position: absolute; top: -9999px; left: -9999px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ساخت کد ملی</h1>
+        
+        <div class="button-group">
+            <button class="btn" onclick="codeRoundGenerator()">تولید کد ملی رند</button>
+            <button class="btn" onclick="codeGenerator()">تولید کد ملی</button>
+        </div>
+        
+        <div id="codeGeneratorResult" class="result-box"></div>
+        
+        <div class="divider"></div>
+        
+        <div class="input-group">
+            <input type="text" id="codeValidatorInput" placeholder="کد ملی را وارد کنید" maxlength="13">
+            <button class="btn" onclick="codeValidator()">بررسی صحت کد ملی</button>
+        </div>
+        
+        <div id="codeValidatorResult" class="result-box"></div>
+        
+        <div class="footer">
+            <p>برای تست و اعتبارسنجی کد ملی ایران</p>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification">کد ملی کپی شد!</div>
+    
+    <div class="for-seo">
+        <h1>تولید کد ملی</h1>
+        <p>کارت شناسایی ملی یک کد دارای یکسری قوانین خاص است که هر عدد 10 رقمی نمتواند یک کد باشد از این رو برای شما این صفحه آماده سازی شده تا تولید کننده یک کد ملی و بررسی صحت کد ملی باشد</p>
+        <h2>تشخیص صحت کد ملی</h2><h2>j,gdn ;n lgd - ;n lgd vkn</h2>
+        <p>در امروز بیشتره نرم‌افزارها برای تولید کد ملی نیاز به استفاده از کد ملی به عنوان یک پارامتر منحصر به فرد و یونیک برای اطلاعات فردی دارند.</p>
+        <h3>تشخیص صحت کد ملی - کد ملی ساز - الگوریتم تشخیص</h3>
+        <p>ساخت و ایجاد یک کد ملی به سادگی انجام میشود و برای صحت و بررسی و تست کد ملی این پیج ساخته شده است. تولید کد ملی رند و شماره ملی ایران و ایرانی رندم است و کمک برنامه نویسان کد جاوا</p>
+        <h4>ساخت کد ملی معتبر</h4>
+    </div>
+    
+    <script>
+      function codeGenerator() {
+        const code = generator();
+        const resultElement = document.getElementById("codeGeneratorResult");
+        resultElement.innerHTML = code + '<button class="copy-btn" onclick="copyCode(\'' + code + '\')"><i class="far fa-copy"></i></button>';
+      }
+      
+      function codeRoundGenerator() {
+        const code = roundGenerator();
+        const resultElement = document.getElementById("codeGeneratorResult");
+        resultElement.innerHTML = code + '<button class="copy-btn" onclick="copyCode(\'' + code + '\')"><i class="far fa-copy"></i></button>';
+      }
+      
+      function codeValidator() {
+        const result = document.getElementById("codeValidatorResult");
+        if (validator(document.getElementById("codeValidatorInput").value)) {
+          result.innerHTML = "<span class='valid'><i class='fas fa-check-circle'></i> کد ملی صحیح است</span>"
+        } else {
+          result.innerHTML = "<span class='invalid'><i class='fas fa-times-circle'></i> کد ملی ناصحیح است</span>"
+        }
+      }
+      
+      function copyCode(code) {
+        navigator.clipboard.writeText(code).then(() => {
+          const notification = document.getElementById("notification");
+          notification.classList.add("show");
+          setTimeout(() => {
+            notification.classList.remove("show");
+          }, 2000);
+        });
+      }
+    </script>
+</body>
+</html>
